@@ -1,0 +1,50 @@
+{
+    "trained_at_malaysia": "2026-05-03T14:23:30.451099+08:00",
+    "trial_number": "91",
+    "random_seed": 42,
+    "train_rows": 25838,
+    "holdout_rows": 6474,
+    "feature_count": 268,
+    "categorical_feature_count": 14,
+    "holdout_metrics": {
+        "log_loss": 0.19387453663052417,
+        "roc_auc": 0.9725252939828957,
+        "pr_auc": 0.9762807935400967
+    },
+    "model_artifact_path": "C:\\Users\\grace\\OneDrive\\Documents\\Learning\\risk_model_project\\models\\risk_model_v1.cbm",
+    "baseline_predictions_path": "C:\\Users\\grace\\OneDrive\\Documents\\Learning\\risk_model_project\\models\\baseline_predictions.npy",
+    "training_parameters": {
+        "objective": "Logloss",
+        "eval_metric": "Logloss",
+        "custom_metric": [
+            "AUC",
+            "PRAUC"
+        ],
+        "random_seed": 42,
+        "thread_count": -1,
+        "verbose": true,
+        "allow_writing_files": false,
+        "bootstrap_type": "Bernoulli",
+        "subsample": 0.8903206126906871,
+        "grow_policy": "Lossguide",
+        "posterior_sampling": false,
+        "model_shrink_mode": "Constant",
+        "iterations": 89,
+        "learning_rate": 0.08799821484684099,
+        "l2_leaf_reg": 0.26486908504555773,
+        "random_strength": 0.8218257282282394,
+        "depth": 11,
+        "min_data_in_leaf": 46,
+        "has_time": false,
+        "rsm": 0.8824980018648074,
+        "leaf_estimation_method": "Gradient",
+        "leaf_estimation_backtracking": "No",
+        "fold_len_multiplier": 3.6584072693303096,
+        "auto_class_weights": "SqrtBalanced",
+        "boost_from_average": false,
+        "allow_const_label": true,
+        "score_function": "L2",
+        "border_count": 165,
+        "max_leaves": 48
+    }
+}

@@ -1,0 +1,24 @@
+# Runs automatically on `git commit` to enforce code style.
+# Zero impact on existing scripts.
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace      # Strip trailing whitespace
+      - id: end-of-file-fixer         # Ensure files end with newline
+      - id: check-yaml                # Validate YAML syntax
+      - id: check-json                # Validate JSON files (catches bad registry JSON!)
+      - id: check-added-large-files   # Block files > 500KB
+        args: ["--maxkb=500"]
+      - id: check-merge-conflict      # Block unresolved merge markers
+
+  - repo: https://github.com/psf/black
+    rev: 24.4.2
+    hooks:
+      - id: black
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.4
+    hooks:
+      - id: ruff
+        args: [--fix]

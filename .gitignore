@@ -1,0 +1,50 @@
+# ==== Python bytecode & caches ====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ==== Virtual environment (NEVER commit) ====
+venv/
+.venv/
+env/
+
+# ==== IDE / OS clutter ====
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# ==== Jupyter checkpoints ====
+.ipynb_checkpoints/
+
+# ==== Raw data: NEVER commit (fintech PII risk) ====
+raw_data/*
+!raw_data/.gitkeep
+
+# ==== Processed data: regenerable, often large ====
+data/*
+!data/.gitkeep
+
+# ==== Logs: change every run ====
+logs/*
+!logs/.gitkeep
+
+# ==== Simulation outputs: regenerable ====
+simulation/*
+!simulation/.gitkeep
+
+# ==== Model binaries: large; keep small JSON registries ====
+models/*.cbm
+models/*.npy
+
+# ==== Secrets ====
+.env
+*.pem
+secrets.yaml
+
+# ==== Setup session transcripts ====
+setup_log_*.txt

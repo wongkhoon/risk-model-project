@@ -1,0 +1,44 @@
+# Continuous Integration — runs on every push and PR.
+# Validates that the project still installs, lints, and tests pass.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Pull the repo onto the CI runner
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Install Python (matching your local version)
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      # 3. Install project + dev deps
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest black ruff
+
+      # 4. Lint
+      - name: Lint with ruff
+        run: ruff check .
+
+      # 5. Format check (non-destructive)
+      - name: Check formatting with black
+        run: black --check .
+
+      # 6. Run tests
+      - name: Run pytest
+        run: pytest

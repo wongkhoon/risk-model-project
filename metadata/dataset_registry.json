@@ -1,0 +1,11 @@
+[
+    {
+        "registered_at_malaysia": "2026-05-03T14:22:13.642167+08:00",
+        "original_source_path": "C:\\Users\\grace\\OneDrive\\Documents\\JobOpportunities\\Money Lion\\DS Assessment\\temp\\Loan-level\\clean_df.parquet",
+        "project_dataset_path": "C:\\Users\\grace\\OneDrive\\Documents\\Learning\\risk_model_project\\data\\clean_df.parquet",
+        "row_count": 32312,
+        "column_count": 284,
+        "sha256_hash": "1e33945a2262ad383147f5531bde96c52cf74b0a6d815f22df5e75f5bbe7763e",
+        "file_size_bytes": 12234234
+    }
+]

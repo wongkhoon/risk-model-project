@@ -1,0 +1,16 @@
+[
+    {
+        "created_at_malaysia": "2026-05-03T14:23:42.535082+08:00",
+        "simulation_type": "time_based_batch",
+        "primary_date_source": "applicationDate",
+        "lookback_days": 30,
+        "cutoff_date": "2017-02-16T23:58:42.921000",
+        "max_application_date": "2017-03-18T23:58:42.921000",
+        "loan_batch_rows": 42471,
+        "ach_batch_rows": 67659,
+        "underwriting_batch_rows": 4235,
+        "loan_batch_path": "C:\\Users\\grace\\OneDrive\\Documents\\Learning\\risk_model_project\\simulation\\raw_batch\\loan_data_batch.csv",
+        "ach_batch_path": "C:\\Users\\grace\\OneDrive\\Documents\\Learning\\risk_model_project\\simulation\\raw_batch\\ach_payment_data_batch.csv",
+        "underwriting_batch_path": "C:\\Users\\grace\\OneDrive\\Documents\\Learning\\risk_model_project\\simulation\\raw_batch\\underwriting_data_batch.csv"
+    }
+]

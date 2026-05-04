@@ -1,0 +1,36 @@
+{
+    "91": {
+        "objective": "Logloss",
+        "eval_metric": "Logloss",
+        "custom_metric": [
+            "AUC",
+            "PRAUC"
+        ],
+        "random_seed": 42,
+        "thread_count": -1,
+        "verbose": true,
+        "allow_writing_files": false,
+        "bootstrap_type": "Bernoulli",
+        "subsample": 0.8903206126906871,
+        "grow_policy": "Lossguide",
+        "posterior_sampling": false,
+        "model_shrink_mode": "Constant",
+        "iterations": 89,
+        "learning_rate": 0.08799821484684099,
+        "l2_leaf_reg": 0.26486908504555773,
+        "random_strength": 0.8218257282282394,
+        "depth": 11,
+        "min_data_in_leaf": 46,
+        "has_time": false,
+        "rsm": 0.8824980018648074,
+        "leaf_estimation_method": "Gradient",
+        "leaf_estimation_backtracking": "No",
+        "fold_len_multiplier": 3.6584072693303096,
+        "auto_class_weights": "SqrtBalanced",
+        "boost_from_average": false,
+        "allow_const_label": true,
+        "score_function": "L2",
+        "border_count": 165,
+        "max_leaves": 48
+    }
+}
